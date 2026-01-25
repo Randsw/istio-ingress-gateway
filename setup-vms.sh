@@ -42,7 +42,6 @@ grafana:
         - grafana.kind.cluster
   plugins:
     - victoriametrics-metrics-datasource
-    - victoriametrics-logs-datasource
 kubeEtcd:
   enabled: true
   service:

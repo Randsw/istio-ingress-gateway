@@ -43,7 +43,7 @@ network(){
 
   if [ -z $(docker network ls --filter name=^$NAME$ --format="{{ .Name }}") ]
   then 
-    docker network create $NAME
+    docker network create --ipv6=false $NAME
     echo "Network $NAME created"
   else
     echo "Network $NAME already exists, skipping"
@@ -188,7 +188,7 @@ proxies
 cluster
 metallb
 #ingress
-dnsmasq
+#dnsmasq
 
 # DONE
 
