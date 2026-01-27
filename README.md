@@ -2,7 +2,7 @@
 
 This guide details how to deploy **Istio** as a high-performance Ingress Controller and **Gateway API** implementation on a **Kind** cluster, specifically configured without the sidecar service mesh.
 
-## 📋 Prerequisites
+## Prerequisites
 
 Ensure the following are installed and updated for 2026:
 
@@ -38,12 +38,13 @@ Password:
 
 - [Grafana](grafana.kind.cluster)
 
-Working UI prove that istio works as ingress-nginx replacement
+Working UI prove that Istio works as ingress-nginx replacement
 
 ## Recommended Dashboards
 
 Import the following IDs into Grafana:
 
+7636: Istio Service
 7645: Istio Control Plane
 23501: Istio Envoy Listeners
 23502: Istio Envoy Clusters
