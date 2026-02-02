@@ -34,6 +34,10 @@ Password:
 
 `kubectl get secret --namespace victoria-metrics vm-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo`
 
+## 3. Deploy Istio
+
+Run `./setup-istio.sh`
+
 ## Open web UI
 
 - [Grafana](grafana.kind.cluster)
